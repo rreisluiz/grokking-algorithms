@@ -1,20 +1,5 @@
 class BinarySearch
-    def initialize_list(elements_number)
-        count = 1
-        
-        number_list = []
-    
-        while (count <= elements_number)
-            number_list << count
-            count += 1
-        end
-
-        puts "list: \n #{number_list.join(', ')} \n\n"
-
-        return number_list
-    end
-
-    def search(list, target_number)
+    def run(list, target_number)
         puts "initializing search: \n"
 
         low = 0

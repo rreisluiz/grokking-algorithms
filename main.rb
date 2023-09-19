@@ -1,6 +1,9 @@
-require './algorithms/binary_search/binary_search.rb'
+require './algorithm/binary_search.rb'
+require './utils/list_utils.rb'
 
 # BinarySearch - call methods and algorithm execution
-search_utils = BinarySearch.new
-list = search_utils.initialize_list(100)
-puts "\n target number index: #{search_utils.search(list, 35)}"
+binary_search = BinarySearch.new
+list_utils = ListUtils.new
+
+list = list_utils.initialize_ord_list(100)
+puts "\n target number index: #{binary_search.run(list, 35)}"
